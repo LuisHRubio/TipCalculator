@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip calculator app</title>
+
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <div class="row">
+    <div style="text-align: center" class="min-vh-100 container align-items-center justify-content-center col-xl-8">
+      <div class="titulo relativo"><p class="mediano muy-grueso">SPLI<br>TTER</p></div>
+      <div style="background-color: white" class="mx-auto redondo px-4 align-items-center col-xl-9 row">
+        <div class="col-xl-6 my-4">
+          <div class="mb-5">
+            <label for="billprice" class="texto-gris py-2">Bill</label>
+            <input type="number texto-verde dinero" id="billprice"  placeholder="0" class="rounded-3 texto-verde dinero"  oninput="cambiarCSS()">
+          </div>
+          <p class="texto-gris">Select Tip %</p>
+          <div class="row my-3">
+            <div class="col-4">
+              <div class="col-md-12 d-grid gap-2">
+                <button type="button" class="btn rounded-3 bg-verde grueso mediano boton-precio" onfocus="calcular(5)">5%</button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="col-md-12 d-grid gap-2">
+                <button type="button" class="btn rounded-3 bg-verde grueso mediano boton-precio" onfocus="calcular(10)">10%</button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="col-md-12 d-grid gap-2">
+                <button type="button" class="btn rounded-3 bg-verde grueso mediano boton-precio" onfocus="calcular(15)">15%</button>
+              </div>
+            </div>
+          </div>
+          <div class="row pb-4">
+            <div class="col-4">
+              <div class="col-md-12 d-grid gap-2">
+                <button type="button" class="btn rounded-3 bg-verde grueso mediano boton-precio" onfocus="calcular(25)">25%</button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="col-md-12 d-grid gap-2">
+                <button type="button" class="btn rounded-3 bg-verde grueso mediano boton-precio" onfocus="calcular(50)">50%</button>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="col-md-12 d-grid gap-2">
+                <input id="customPerc" type="text" class="col-12 rounded-3 grueso mediano custom" style="padding:5px 0px;text-align: center" placeholder="Custom" onchange="revisarCustom()">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6">
+                <label for="numOfPeople" class="texto-gris py-2">Number of People</label>
+            </div>
+            <div class="col-xl-6">
+              <label for="numOfPeople" class="texto-gris py-2" style="display: flex; justify-content: flex-end;color: #D26E57;" id="cantzero"></label>
+            </div>
+          </div>
+
+          <input type="text" id="numOfPeople"  placeholder="0" class="rounded-3 texto-verde personas" onchange="cambiarCSS(),revisarCero()">
+
+        </div>
+        <div class="col-xl-6">
+          <div class="bg-verde redondo text-white px-5 py-5">
+            <div class="row py-1">
+              <div class="col-6">
+                <div>
+                  <span class="pequeno">Tip Amount</span>
+                </div>
+                <div>
+                  <span class="pequeno muteado">/ person</span>
+                </div>
+              </div>
+              <div class="col-3">
+                <span class="verde-claro muy-grueso grande" id="tipersona">$0.00</span>
+              </div>
+            </div>
+            <div class="row py-1 mb-5 pb-5">
+              <div class="col-6">
+                <div>
+                  <span class="pequeno">Total</span>
+                </div>
+                <div>
+                  <span class="pequeno muteado">/ person</span>
+                </div>
+              </div>
+              <div class="col-3">
+                <span class="verde-claro muy-grueso grande" id="totpersona">$0.00</span>
+              </div>
+            </div>
+            <div class="pt-5 align-items-center justify-content-center d-flex">
+
+              <button type="button" class="btn rounded-3 muy-grueso mediano-pequeno col-12 boton-reset" onclick="resetear()" id="botonReset" disabled>RESET</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

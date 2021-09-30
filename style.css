@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    background-color: #C5E4E7;
+}
+
+.bg-verde{
+    background-color: #00474B;
+}
+
+.bg-verde-claro{
+    background-color: #35BAAD;
+}
+
+.grueso{
+    font-weight: 500;
+}
+
+.muy-grueso{
+    font-weight: 700;
+}
+
+.grande{
+    font-size: 48px;
+}
+
+.mediano{
+    font-size: 24px;
+}
+
+.texto-gris{
+    color:#5A6D6F;
+    font-weight: 700;
+}
+
+.texto-verde{
+    color:#00474B;
+    font-weight: 700;
+}
+
+.dinero{
+    padding: 12px 18px;
+    color:#00474B;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: right;
+    background-color: #F3F8FB;
+    background-image: url('images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position-y: 24px;
+    background-position-x: 12px;
+    width: 100%;
+    border: 1px solid #F2F6F7;
+}
+
+.dinero::placeholder{
+    color: #A3BDBC;
+}
+
+.personas::placeholder{
+    color: #A3BDBC;
+}
+
+/*#CED4DA*/
+
+
+
+.personas{
+    padding: 12px 18px;
+    color:#00474B;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: right;
+    background-color: #F3F8FB;
+    background-image: url('images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position-y: 24px;
+    background-position-x: 12px;
+    width: 100%;
+    border: 1px solid #F2F6F7;
+}
+
+.peligro{
+    padding: 12px 18px;
+    color:#00474B;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: right;
+    background-color: #F3F8FB;
+    background-image: url('images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-position-y: 24px;
+    background-position-x: 12px;
+    width: 100%;
+    border: 2px solid #D26E57;
+}
+
+.boton-reset{
+    background-color: #0C686D;
+    color: #00474B;
+}
+.boton-reset:hover{
+    background-color: #0C686D;
+    color: #065E64;
+}
+
+.custom{
+    background-color: #F3F8FB;
+    color: #506F70;
+    font-weight: 700;
+}
+
+.redondo{
+    border-radius: 20px;
+}
+
+.verde-claro{
+    color:#35BAAD;
+}
+
+.pequeno{
+    font-size: 14px;
+}
+
+.mediano-pequeno{
+    font-size: 18px;
+}
+
+.titulo{
+    color: #436869;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+.relativo{
+    position: relative;
+
+}
+
+.absoluto{
+    position: absolute;
+}
+
+.boton-precio{
+    color: #F8F9FA;
+}
+
+.boton-precio:hover{
+    background-color: #9EE8DF;
+    color:#00474B;
+}
+.boton-precio:focus{
+    background-color: #26C2AD;
+}
+
+.muteado{
+    color:#7AA4A9;
+}
+
